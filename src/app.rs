@@ -1,4 +1,5 @@
 //! This module implements the central application object.
+extern crate num_cpus;
 
 use std::convert::Into;
 use std::sync::RwLock;
@@ -48,9 +49,6 @@ use module::Module;
 use typemap::{ShareMap, Key};
 use hyper::header::{IfModifiedSince, LastModified, HttpDate, CacheControl, CacheDirective};
 use time;
-
-const DEFAULT_THREADS: usize = 15;
-
 
 /// The pencil type.  It acts as the central application object.  Once it is created it
 /// will act as a central registry for the view functions, the URL rules and much more.
@@ -609,7 +607,7 @@ impl Pencil {
 
     /// Runs the application on a hyper HTTP server.
     pub fn run<A: ToSocketAddrs>(self, addr: A) {
-        run_server(self, addr, DEFAULT_THREADS);
+        run_server(self, addr, num_cpus::get());
     }
 
     /// Runs the application on a hyper HTTP server.
