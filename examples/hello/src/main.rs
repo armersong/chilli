@@ -1,4 +1,4 @@
-extern crate pencil;
+extern crate sharp_pencil;
 extern crate typemap;
 #[macro_use] extern crate log;
 extern crate env_logger;
@@ -75,7 +75,7 @@ fn main() {
     let mut app = Pencil::new(env::var("HELLO_ROOT_PATH").unwrap().as_ref());
     app.set_debug(true);
     app.set_log_level();
-    env_logger::init().unwrap();
+    env_logger::init();
     app.enable_static_file_handling();
     app.register_template("hello.html");
     app.before_request(before_request);
