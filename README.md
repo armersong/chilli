@@ -1,6 +1,6 @@
 #chilli (A Sharp Pencil fork)
 
-[![Build Status](https://travis-ci.org/armersong/chilli.svg?branch=master)](https://travis-ci.org/armersong/chilli)
+[![Build Status](https://travis-ci.org/armersong/chilli.svg?branch=master)](https://travis-ci.org/armersong/chilli) [![Crates.io Version](https://img.shields.io/crates/v/chilli.svg)](https://crates.io/crates/chilli/)
 
 A microframework for Rust inspired by Flask.
 
