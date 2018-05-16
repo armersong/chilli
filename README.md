@@ -1,13 +1,13 @@
-#Sharp Pencil (A Pencil fork)
+#chilli (A Sharp Pencil fork)
 
-[![Build Status](https://travis-ci.org/armersong/sharp_pencil.svg?branch=master)](https://travis-ci.org/armersong/sharp_pencil) [![Crates.io Version](https://img.shields.io/crates/v/pencil.svg)](https://crates.io/crates/pencil/) [![Crates.io LICENSE](https://img.shields.io/crates/l/pencil.svg)](https://crates.io/crates/pencil/)
+[![Build Status](https://travis-ci.org/armersong/chilli.svg?branch=master)](https://travis-ci.org/armersong/chilli) [![Crates.io LICENSE](https://img.shields.io/crates/l/pencil.svg)](https://crates.io/crates/pencil/)
 
 A microframework for Rust inspired by Flask.
 
 ```rust
-extern crate pencil;
+extern crate chilli;
 
-use sharp_pencil::{Pencil, Request, Response, PencilResult};
+use chilli::{Pencil, Request, Response, PencilResult};
 
 fn hello(_: &mut Request) -> PencilResult {
     Ok(Response::from("Hello World!"))
@@ -20,6 +20,8 @@ fn main() {
 }
 ```
 
-One simple guide: https://fengsp.github.io/blog/2016/3/introducing-pencil/
+One simple guide: 
+https://github.com/golddranks/sharp_pencil
+https://fengsp.github.io/blog/2016/3/introducing-pencil/
 
 If you feel anything wrong, feedbacks or pull requests are welcome.

@@ -2,27 +2,27 @@
 //!
 //! # Installation
 //!
-//! This crate is called `pencil` and you can depend on it via cargo:
+//! This crate is called `chilli` and you can depend on it via cargo:
 //!
 //! ```ini
 //! [dependencies]
-//! pencil = "*"
+//! chilli = "*"
 //! ```
 //!
 //! # Quickstart
 //!
-//! A short introduction to Pencil.
+//! A short introduction to chilli.
 //!
 //! ## A Minimal Application
 //!
-//! A minimal Pencil application looks something like this:
+//! A minimal chilli application looks something like this:
 //!
 //! ```rust,no_run
-//! extern crate sharp_pencil;
+//! extern crate chilli;
 //!
-//! use sharp_pencil::Pencil;
-//! use sharp_pencil::{Request, PencilResult, Response};
-//! use sharp_pencil::method::Get;
+//! use chilli::Pencil;
+//! use chilli::{Request, PencilResult, Response};
+//! use chilli::method::Get;
 //!
 //!
 //! fn hello(_: &mut Request) -> PencilResult {
@@ -38,7 +38,7 @@
 //! ```
 
 #![allow(unused_attributes)]
-#![crate_name = "sharp_pencil"]
+#![crate_name = "chilli"]
 #![crate_type = "lib"]
 #![doc(html_logo_url = "https://raw.githubusercontent.com/fengsp/pencil/master/logo/pencil.png",
        html_favicon_url = "https://raw.githubusercontent.com/fengsp/pencil/master/logo/favicon.ico",

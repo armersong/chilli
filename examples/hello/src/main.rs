@@ -1,4 +1,4 @@
-extern crate sharp_pencil;
+extern crate chilli;
 extern crate typemap;
 #[macro_use] extern crate log;
 extern crate env_logger;
@@ -6,12 +6,12 @@ extern crate env_logger;
 use std::env;
 use std::collections::BTreeMap;
 use typemap::Key;
-use sharp_pencil::{Pencil, Request, Response, PencilResult};
-use sharp_pencil::jsonify;
-use sharp_pencil::HTTPError;
-use sharp_pencil::{redirect, abort};
-use sharp_pencil::method::Get;
-use sharp_pencil::Module;
+use chilli::{Pencil, Request, Response, PencilResult};
+use chilli::jsonify;
+use chilli::HTTPError;
+use chilli::{redirect, abort};
+use chilli::method::Get;
+use chilli::Module;
 
 
 fn hello(_: &mut Request) -> PencilResult {

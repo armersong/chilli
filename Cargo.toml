@@ -1,13 +1,13 @@
 [package]
-name = "sharp_pencil"
+name = "chilli"
 version = "0.4.3"
 authors = ["Shipeng Feng <fsp261@gmail.com>", "Pyry Kontio <pyry.kontio@drasa.eu>", "Armer song <armer.song@gmail.com>"]
 keywords = ["web", "framework", "server", "http"]
 license = "BSD-3-Clause"
 readme = "README.md"
-repository = "https://github.com/armersong/sharp_pencil"
-homepage = "https://github.com/armersong/sharp_pencil"
-documentation = "http://armersong.github.io/armersong/"
+repository = "https://github.com/armersong/chilli"
+homepage = "https://github.com/armersong/chilli"
+documentation = "http://armersong.github.io/chilli/"
 description = "A micro web framework for Rust. (A Pencil fork)"
 categories = ["web-programming::http-server"]
 
