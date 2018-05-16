@@ -5,9 +5,9 @@ authors = ["Shipeng Feng <fsp261@gmail.com>", "Pyry Kontio <pyry.kontio@drasa.eu
 keywords = ["web", "framework", "server", "http"]
 license = "BSD-3-Clause"
 readme = "README.md"
-repository = "https://github.com/golddranks/sharp_pencil"
-homepage = "https://github.com/golddranks/sharp_pencil"
-documentation = "http://fengsp.github.io/pencil/"
+repository = "https://github.com/armersong/sharp_pencil"
+homepage = "https://github.com/armersong/sharp_pencil"
+documentation = "http://armersong.github.io/armersong/"
 description = "A micro web framework for Rust. (A Pencil fork)"
 categories = ["web-programming::http-server"]
 
