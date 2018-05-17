@@ -1,6 +1,6 @@
 [package]
 name = "chilli"
-version = "0.4.3"
+version = "0.4.4"
 authors = ["Shipeng Feng <fsp261@gmail.com>", "Pyry Kontio <pyry.kontio@drasa.eu>", "Armer song <armer.song@gmail.com>"]
 keywords = ["web", "framework", "server", "http"]
 license = "BSD-3-Clause"
