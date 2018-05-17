@@ -1,8 +1,8 @@
 // Test data structures.
 
-extern crate sharp_pencil;
+extern crate chilli;
 
-use sharp_pencil::datastructures::MultiDict;
+use chilli::datastructures::MultiDict;
 
 
 #[test]

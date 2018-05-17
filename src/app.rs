@@ -99,7 +99,7 @@ impl Pencil {
     /// Usually you create a pencil object in your main function like this:
     ///
     /// ```rust,no_run
-    /// use sharp_pencil::Pencil;
+    /// use chilli::Pencil;
     ///
     /// fn main() {
     ///     let mut app = Pencil::new("/web/myapp");
@@ -268,8 +268,8 @@ impl Pencil {
     /// Registers a function as one http error handler.  Example:
     ///
     /// ```rust,no_run
-    /// use sharp_pencil::{Pencil, PencilResult, Response};
-    /// use sharp_pencil::HTTPError;
+    /// use chilli::{Pencil, PencilResult, Response};
+    /// use chilli::HTTPError;
     ///
     ///
     /// fn page_not_found(error: HTTPError) -> PencilResult {
@@ -292,8 +292,8 @@ impl Pencil {
     /// user errors currently, you can do it in your own view like this:
     ///
     /// ```rust,no_run
-    /// use sharp_pencil::Request;
-    /// use sharp_pencil::{PencilResult, Response};
+    /// use chilli::Request;
+    /// use chilli::{PencilResult, Response};
     ///
     ///
     /// #[derive(Clone, Copy)]
@@ -327,9 +327,9 @@ impl Pencil {
     /// ```rust,no_run
     /// use std::convert;
     ///
-    /// use sharp_pencil::Request;
-    /// use sharp_pencil::{Pencil, PencilResult, Response};
-    /// use sharp_pencil::{PencilError, PenUserError, UserError};
+    /// use chilli::Request;
+    /// use chilli::{Pencil, PencilResult, Response};
+    /// use chilli::{PencilError, PenUserError, UserError};
     ///
     ///
     /// #[derive(Clone, Copy)]

@@ -1,12 +1,12 @@
 // Test the configuration.
 
-extern crate sharp_pencil;
+extern crate chilli;
 extern crate serde_json;
 
 use serde_json::value::ToJson;
 use std::env;
 
-use sharp_pencil::Pencil;
+use chilli::Pencil;
 
 
 fn config_test(app: Pencil) {

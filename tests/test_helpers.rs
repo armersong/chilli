@@ -1,6 +1,6 @@
 // Test helpers.
 
-extern crate sharp_pencil;
+extern crate chilli;
 extern crate url;
 extern crate hyper;
 
@@ -8,8 +8,8 @@ use std::path::PathBuf;
 
 use hyper::header::Location;
 
-use sharp_pencil::{PenHTTPError, PenUserError};
-use sharp_pencil::{abort, redirect, safe_join, escape};
+use chilli::{PenHTTPError, PenUserError};
+use chilli::{abort, redirect, safe_join, escape};
 
 
 #[test]

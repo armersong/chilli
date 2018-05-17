@@ -1,9 +1,9 @@
 // Test the HTTP errors.
 
-extern crate sharp_pencil;
+extern crate chilli;
 extern crate hyper;
 
-use sharp_pencil::http_errors::NotFound;
+use chilli::http_errors::NotFound;
 use hyper::header::ContentType;
 
 
