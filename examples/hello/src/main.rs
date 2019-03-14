@@ -5,6 +5,7 @@ extern crate env_logger;
 
 use std::env;
 use std::collections::BTreeMap;
+use std::io::Read;
 use typemap::Key;
 use chilli::{Pencil, Request, Response, PencilResult};
 use chilli::jsonify;
@@ -12,9 +13,22 @@ use chilli::HTTPError;
 use chilli::{redirect, abort};
 use chilli::method::Get;
 use chilli::Module;
+use std::fs::File;
 
+fn upload_file(req: &mut Request) -> PencilResult {
+    println!("{:?}", req);
+    println!("files {:?}", req.files());
+    let file = req.files().get("pic").unwrap();
+    println!("file {}", file.filename().unwrap().unwrap());
+    let mut f = File::open(&file.path).unwrap();
+    let mut payload:String = String::from("");
+    f.read_to_string(&mut payload);
+    println!("payload {}", payload);
+    Ok(Response::from(format!("{}", file.size.unwrap())))
+}
 
-fn hello(_: &mut Request) -> PencilResult {
+fn hello(req: &mut Request) -> PencilResult {
+    println!("{:?}", req);
     Ok(Response::from("Hello World!"))
 }
 
@@ -83,6 +97,7 @@ fn main() {
     app.httperrorhandler(404, page_not_found);
 
     app.get("/", "hello", hello);
+    app.post("/upload", "upload_file", upload_file);
     app.get("/user/<user_id:int>", "user", user);
     app.get("/info", "app_info", app_info);
     app.get("/hello_template", "hello_template", hello_template);
